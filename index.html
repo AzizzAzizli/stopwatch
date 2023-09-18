@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style/reset.css" />
+    <link rel="stylesheet" href="./src/style/bootstrap-min.css" />
+    <link rel="stylesheet" href="./src/style/style.css" />
+    <link rel="icon" href="./src/icon/stopwatch.png" type="image/x-icon" />
+    <title>StopWatch</title>
+  </head>
+  <body>
+    <!-- Header and Nav -->
+    <header
+      style="height: 60px"
+      class="d-flex w-100 text-light align-items-center justify-content-between"
+    >
+      <h1 class="fs-5 fw-medium ps-3">StopWatch</h1>
+      <nav class="d-flex align-items-center">
+        <ul class="pe-3 d-flex gap-5 mt-2">
+          <li>
+            <a
+              target="_blank"
+              class="fw-medium"
+              href="https://www.linkedin.com/in/aziz-azizli-3ba24a28a/"
+              >Linkedin
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              class="fw-medium"
+              href="https://github.com/AzizzAzizli"
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Main -->
+    <main class="w-100 container h-100">
+      <div class="row d-flex justify-content-center pt-5 mt-2 h-100">
+        <!-- Contetn -->
+        <div
+          class="content col-lg-8 col-xl-6 rounded-3 col-md-10 col-sm-12 col-11 "
+        >
+          <!-- Chronometer and buttons -->
+          <div class="border-bottom border-secondary border-opacity-75 pb-4">
+            <div id="showTime" class="h1 text-center p-5 fw-medium text-light">
+              00:00:00
+            </div>
+            <div class="d-flex gap-2">
+              <button id="startBtn" class="btn w-25 btn-outline-info">Start</button
+              ><button id="stopBtn" class="btn w-25 btn-outline-info">Stop</button
+              ><button id="resetBtn" class="btn w-25 btn-outline-info">Reset</button
+              ><button id="lapBtn" class="btn w-25 btn-outline-info">Lap</button>
+            </div>
+          </div>
+          <!-- Lap content -->
+          <div id="lapContent" class="w-100 h-100 laps text-light p-2">
+<!-- <div class="w-100 bg-secondary rounded-5 ps-3"><p class="fs-1">1. 00:00:07</p></div> -->
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./src/js/jquery-3-7-1-min.js"></script>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
