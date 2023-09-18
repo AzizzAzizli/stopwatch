@@ -90,5 +90,5 @@ function lapRender (){
   
     $("#lapContent").html(lapArr.map((el,index)=>{
         return`<div class="w-100 bg-secondary rounded-5 ps-3"><p class="fs-1">${index+1}. ${el}</p></div>`
-    }).join(""))
+    }).reverse().join(""))
 }
