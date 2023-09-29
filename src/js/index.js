@@ -92,3 +92,6 @@ function lapRender (){
         return`<div class="w-100 bg-secondary rounded-5 ps-3"><p class="fs-1">${index+1}. ${el}</p></div>`
     }).reverse().join(""))
 }
+document.addEventListener("dblclick",function(e){
+    e.preventDefault();
+})
